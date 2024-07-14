@@ -1,31 +1,34 @@
 html {
   font-size: 62.5%;
+  font-family: "Red Hat Display", sans-serif;
 }
 
 body {
   margin: auto;
-  font-family: "Red Hat Display", sans-serif;
-  background-image: url(../images/pattern-background-desktop.svg);
+  /* background-image: url(../images/pattern-background-desktop.svg); */
 }
 
 .container {
-  max-width: 450px;
+  background-color: #FFF;
+  max-width: 400px;
   margin: 3rem auto 0;
   border-top-left-radius: 2rem;
   border-top-right-radius: 2rem;
 }
 
-.container svg {
+.container .logo {
   border-radius: 2rem;
+  width: 100%;
+  height: 100%;
 }
 
 .container .project {
   text-align: center;
-  background-color: red;
 }
 
 .container .project .subtitle {
   font-size: 2.3rem;
+  margin-top: 2rem;
   color: var(--Dark-blue);
 }
 
@@ -35,10 +38,42 @@ body {
   margin: auto;
   width: 30rem;
   line-height: 2rem;
-  color: var(--Pale-blue);
-  border: 1px solid blue;
+  color: var(--Desaturated-blue);
+  margin-top: 2rem;
 }
 
 .container .annoucement {
-  background-color: aqua; PAREI AQUI
+  background-color: var(--Very-pale-blue);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  padding: 1.5rem 2rem;
+  border-radius: 1rem;
 }
+
+.container .annoucement .music {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .annoucement .group {
+  margin-left: 2rem;
+}
+
+.container .annoucement .group .plan {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.container .annoucement .group .price {
+  font-size: 1.2rem;
+}
+
+.container .annoucement .class-button .btn-change {
+  font-size: 1rem;
+  color: var(--Bright-blue);
+  font-weight: bold;
+}
+
