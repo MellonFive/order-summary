@@ -5,21 +5,23 @@ html {
 
 body {
   margin: auto;
-  /* background-image: url(../images/pattern-background-desktop.svg); */
+  background-image: url(../images/pattern-background-desktop.svg);
 }
 
 .container {
+  width: 100%;
   background-color: #FFF;
-  max-width: 400px;
+  max-width: 35rem;
   margin: 3rem auto 0;
-  border-top-left-radius: 2rem;
-  border-top-right-radius: 2rem;
+  border-radius: 2rem;
 }
 
 .container .logo {
   border-radius: 2rem;
   width: 100%;
   height: 100%;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 .container .project {
@@ -37,9 +39,14 @@ body {
   text-align: center;
   margin: auto;
   width: 30rem;
+  font-weight: 500;
   line-height: 2rem;
   color: var(--Desaturated-blue);
   margin-top: 2rem;
+}
+
+.container .part {
+  padding: 0 4rem;
 }
 
 .container .annoucement {
@@ -47,9 +54,9 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 2rem;
-  padding: 1.5rem 2rem;
+  padding: 1rem 2rem;
   border-radius: 1rem;
+  margin: 2.5rem 0;
 }
 
 .container .annoucement .music {
@@ -69,11 +76,38 @@ body {
 
 .container .annoucement .group .price {
   font-size: 1.2rem;
+  margin-top: .5rem;
 }
 
 .container .annoucement .class-button .btn-change {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: var(--Bright-blue);
   font-weight: bold;
+}
+
+.container .payment {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .payment .btn-payment {
+  width: 100%;
+  text-align: center;
+  border-radius: .7rem;
+  background-color: var(--Bright-blue);
+  padding: 1.3rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #FFF;
+}
+
+.container .payment .cancel {
+  margin-top: 2.5rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--Desaturated-blue);
+  margin-bottom: 3rem;
 }
 
