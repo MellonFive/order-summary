@@ -1,17 +1,7 @@
-html {
-  font-size: 62.5%;
-  font-family: "Red Hat Display", sans-serif;
-}
-
-body {
-  margin: auto;
-  background-image: url(../images/pattern-background-desktop.svg);
-}
-
 .container {
   width: 100%;
-  background-color: #FFF;
-  max-width: 35rem;
+  background-color: var(--white);
+  max-width: 37rem;
   margin: 3rem auto 0;
   border-radius: 2rem;
 }
@@ -77,12 +67,18 @@ body {
 .container .annoucement .group .price {
   font-size: 1.2rem;
   margin-top: .5rem;
+  color: var(--Desaturated-blue);
 }
 
 .container .annoucement .class-button .btn-change {
   font-size: 1.2rem;
   color: var(--Bright-blue);
   font-weight: bold;
+  transition: .5s;
+}
+
+.container .annoucement .class-button .btn-change:hover {
+  color: var(--Desaturated-blue);
 }
 
 .container .payment {
@@ -97,10 +93,16 @@ body {
   text-align: center;
   border-radius: .7rem;
   background-color: var(--Bright-blue);
-  padding: 1.3rem;
+  padding: 1rem 1.3rem;
   font-size: 1.2rem;
   font-weight: bold;
   color: #FFF;
+  transition: .5s;
+}
+
+.container .payment .btn-payment:hover {
+  opacity: .8;
+  cursor: pointer;
 }
 
 .container .payment .cancel {
@@ -109,5 +111,5 @@ body {
   font-weight: 700;
   color: var(--Desaturated-blue);
   margin-bottom: 3rem;
+  cursor: pointer;
 }
-
