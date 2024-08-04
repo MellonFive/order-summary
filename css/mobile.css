@@ -1,0 +1,6 @@
+@media (max-width: 576px) {
+    body {
+        width: 30rem;
+        margin: 2rem 5rem 4rem 5rem;
+    }
+}
